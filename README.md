@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/dojo-java-programming/maven-documentation-sample.svg?branch=master)](https://travis-ci.org/dojo-java-programming/maven-documentation-sample)
+
 # Maven Documentation Sample
 
 Shows how project documentation can be written in `markdown` format. From these documents a project web site can be generated through the `maven-site-plugin`.
