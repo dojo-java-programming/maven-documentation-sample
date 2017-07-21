@@ -13,7 +13,7 @@
 
 	<scm>
 		<url>https://github.com/dojo-java-programming/maven-documentation-sample</url>
-		<connection>https://github.com/dojo-java-programming/maven-documentation-sample.git</connection>
+		<connection>scm:git:https://github.com/dojo-java-programming/maven-documentation-sample.git</connection>
 	</scm>
 	<issueManagement>
 		<url>https://github.com/dojo-java-programming/maven-documentation-sample/issues</url>
