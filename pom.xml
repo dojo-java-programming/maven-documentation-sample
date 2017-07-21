@@ -19,6 +19,21 @@
 		<url>https://github.com/dojo-java-programming/maven-documentation-sample/issues</url>
 		<system>GitHub Issues</system>
 	</issueManagement>
+	<ciManagement>
+		<system>travis-ci</system>
+		<url>https://travis-ci.org/dojo-java-programming/maven-documentation-sample</url>
+	</ciManagement>
+	<developers>
+		<developer>
+			<id></id>
+			<name>Tjeerd Verhagen</name>
+			<url>http://verhagen.github.io/</url>
+			<roles>
+				<role>Lead Developer</role>
+				<role>Continuous Deployment Expert</role>
+			</roles>
+		</developer>
+	</developers>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -125,4 +140,31 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>2.9</version>
+				<configuration>
+					<dependencyDetailsEnabled>false</dependencyDetailsEnabled>
+					<dependencyLocationsEnabled>false</dependencyLocationsEnabled>
+				</configuration>
+				<reportSets>
+					<reportSet>
+						<reports>
+							<!--
+							<report>dependencies</report>
+							-->
+							<report>issue-tracking</report>
+							<report>scm</report>
+							<report>project-team</report>
+							<report>dependencies</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+			</plugin>
+		</plugins>
+	</reporting>
 </project>
