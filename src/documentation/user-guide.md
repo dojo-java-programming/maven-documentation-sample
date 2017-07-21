@@ -2,6 +2,7 @@
 
 ## Product Release Information
 
+| Part             | Value              |
 | ---------------- | ------------------ |
 | Product:         | ${project.name}    |
 | Release Number:  | ${project.version} |
